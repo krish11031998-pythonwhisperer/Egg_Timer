@@ -13,14 +13,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var Main_label: UILabel!
     @IBOutlet weak var timer_bar: UIProgressView!
-    
     @IBAction func Egg_type(_ sender: UIButton) {
         type_Egg_chosen(type: sender.currentTitle!)
     }
     func type_Egg_chosen(type: String){
         let timings: [String:Int] = ["Soft":5,"Medium":8,"Hard":12]
         let init_str = "You have chosen"
-        switch type{
+    switch type{
             case "Soft":
                 print(init_str+" Soft")
                 break
